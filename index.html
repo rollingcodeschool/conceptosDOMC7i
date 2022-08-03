@@ -50,7 +50,7 @@
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="buscador">
                   <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
               </div>
@@ -60,16 +60,17 @@
     <main>
         <section class="bg-dark text-light">
             <article class="container py-4">
-                <h1>Practica de DOM</h1>
+                <h1 id="titulo">Practica de DOM</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo vero dicta officiis animi veritatis ipsum quo modi ut nesciunt? A esse quis quibusdam, dolore laborum repudiandae molestiae exercitationem reprehenderit explicabo!</p>
-                <button class="btn btn-primary">Cambiar</button>
+                <button class="btn btn-primary" onclick="cambiarTitulo()">Cambiar</button>
             </article>
         </section>    
         <section class="container my-5">
             <h2>Como crear elementos html desde JavaScript</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus esse a, repellendus, nesciunt accusantium corporis soluta id dolorum nostrum quae, sint cumque dolore quis commodi laudantium? Modi sapiente possimus temporibus.</p>
-            <button class="btn btn-outline-primary">Ver mas...</button>
+            <button id="btnVerMas" class="btn btn-outline-primary" onclick="verMas()">Ver mas...</button>
         </section>   
+        
     </main>
     <footer class="bg-dark text-light text-center py-4">
         <p>&copy; Todos los derechos reservados</p>
